@@ -135,3 +135,12 @@ console.log('desde main js')
 
 
 
+// Funciones con arrays
+
+// Array
+// Mario
+// Luigi
+// Browser
+// Toad
+// Peach
+
