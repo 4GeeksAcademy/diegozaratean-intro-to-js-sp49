@@ -140,7 +140,104 @@ console.log('desde main js')
 // Array
 // Mario
 // Luigi
-// Browser
+// Bowser
 // Toad
 // Peach
 
+let superMarioCharacters = ['Bowser','Mario','Bowser','Luigi','Toad','Peach','Star','Bowser']
+
+console.log(superMarioCharacters)
+
+// console.log(superMarioCharacters[0])
+
+for(i=superMarioCharacters.length -1;i >= 0 ; i--){
+    console.log(superMarioCharacters[i])
+}
+
+let numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+
+for(i=0;i < numbers.length; i = i + 3 ){
+
+    console.log(numbers[i])
+}
+
+
+let goodCharacters = []
+for(i=0;i < superMarioCharacters.length ; i++){
+    console.log(superMarioCharacters[i])
+    // si el elemento actual no es bowser copialo 
+    // if(superMarioCharacters[i] !==  'Bowser'  ) {copialo}
+    if( superMarioCharacters[i] !== 'Bowser' ){        
+        goodCharacters.push(superMarioCharacters[i])
+    }   
+    console.log('superMarioCharacters')
+    console.log(superMarioCharacters)
+    console.log('goodCharacters')
+    console.log(goodCharacters)
+}
+console.log(superMarioCharacters)
+console.log(goodCharacters)
+
+let goodCharactersFilter = superMarioCharacters.filter( (character)=> character !== 'Bowser' )
+console.log('Con filter')
+console.log(superMarioCharacters)
+console.log(goodCharacters)
+
+
+// filtor que traiga el numero 7 
+console.log( numbers.filter( (numero)=> numero === 7 ) )
+console.log( numbers.filter( (numero)=> numero === 70 ) )
+console.log( numbers.filter( (numero)=> numero !== 7 ) )
+console.log( numbers.filter( (numero)=> numero > 7 ) )
+console.log( numbers.filter( (numero)=> numero%3 === 0 ) )
+
+
+
+let newNumbers = []
+for(i=0; i < numbers.length; i++){
+    console.log(numbers[i])
+    console.log(numbers[i] * 4)
+    newNumbers.push(numbers[i] * 4)
+}
+
+console.log(numbers)
+console.log(newNumbers)
+
+let mapNumbers = numbers.map( numero => numero * 4 )
+console.log('mapNumbers')
+console.log(mapNumbers)
+
+// Quiero pluralizar los superMarioCharacters
+console.log(superMarioCharacters)
+let pluralSuperMarioCharacters = superMarioCharacters.map(personaje => personaje + 's' )
+console.log(pluralSuperMarioCharacters)
+
+console.log('For Each')
+superMarioCharacters.forEach( (character)=>{
+    console.log(character)
+} )
+
+// for(i=0;i < numbers.length; i++ ){
+//     console.log(numbers[i])
+// }
+numbers.forEach( (number)=>{
+    console.log(number)
+}  )
+
+
+console.log('Do while')
+let j = 20
+do {
+    console.log(j)
+    j++
+} while( j < 5)
+
+
+j = 20
+do {
+    console.log(j)
+    j--
+} while( j >= 15)
+
+
+console.log( numbers.filter( (numero)=> numero > 7 && numero < 15) )
