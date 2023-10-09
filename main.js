@@ -107,22 +107,22 @@ console.log('desde main js')
 
 
 // Funciones declarativas
-saludar()
-function saludar(){
-    console.log('hola declarativa')
-}
+// saludar()
+// function saludar(){
+//     console.log('hola declarativa')
+// }
 
-// Funciones de expresión
-const saludarExpresion = function(){
-    console.log('hola expresión')
-}
-saludarExpresion()
+// // Funciones de expresión
+// const saludarExpresion = function(){
+//     console.log('hola expresión')
+// }
+// saludarExpresion()
 
-// Funciones Flecha Arrow
-const saludarFlecha = () => {
-    console.log('hola Flecha')
-}
-saludarFlecha()
+// // Funciones Flecha Arrow
+// const saludarFlecha = () => {
+//     console.log('hola Flecha')
+// }
+// saludarFlecha()
 
 
 
@@ -132,3 +132,6 @@ saludarFlecha()
 // 3. Tomar una array de Acción y obtener un elemento aleatorio de este array
 // 4. Tomar una array de Que y obtener un elemento aleatorio de este array
 // 5. Tomar una array de Cuando y obtener un elemento aleatorio de este array
+
+
+
