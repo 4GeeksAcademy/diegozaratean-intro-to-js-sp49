@@ -65,3 +65,34 @@ function lanzarDados(){
 // console.log(Math.ceil(Math.random() * 6))
 // Mostrar el resultado en el html, vinvular js con html y con cada dado 
 // DONE: vincular html con js con el boton, cuando le de click al boton ejecutar una funcion
+
+
+
+// usuario pueda cambiar el alto y el ancho de los dados
+//  DONE:  crear un boton que modifique el tamaño
+//      DONE: crear el boton html que llame una accion en js
+//      DONE: modificar el tamaño de los dados
+//   DONE:  leer los valores de los inputs de alto y ancho
+// DONE: agregar los inputs html
+function cambiarDimensiones(){
+    let ancho = document.querySelector('#ancho').value
+    let alto = document.querySelector('#alto').value
+    
+    document.getElementById('dado1').style.width = ancho + 'px'
+    document.getElementById('dado1').style.height = alto + 'px'
+    document.getElementById('dado2').style.width = ancho + 'px'
+    document.getElementById('dado2').style.height = alto + 'px'
+}
+
+
+
+
+setInterval(lanzarDados, 3000);
+
+// function myCallback() { 
+//   lanzarDados()
+// }
+
+
+
+
